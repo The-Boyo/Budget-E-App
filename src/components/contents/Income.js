@@ -15,7 +15,7 @@ const Income = (props) => {
     return income.map(inc => {
       return (
         <div key={inc.des} id={inc.des} className="list-inc_cont">
-          <li>{capitalise(inc.des)}</li>
+          <li className="des">{capitalise(inc.des)}</li>
           <li className="val">{addCommas(inc.val)}/=</li>
           <i className="fa-solid fa-circle-xmark" onClick={removeIncome}></i>
         </div>

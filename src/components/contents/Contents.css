@@ -68,23 +68,23 @@
 }
 
 .list-inc_cont > li, .list-exp_cont > li {
-  margin: .5em;
+  margin: .4em .2em;
 }
 
 .list-inc_cont > i, .list-exp_cont > i {
-  margin: .5em;
+  margin-left: .5em;
   justify-self: end;
 }
 
 .val {
   justify-self: flex-end;
   position: relative;
-  right: -2em;
+  right: -3em;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .val {
-    right: -.5em;
+    right: -1em;
   }  
 }
 

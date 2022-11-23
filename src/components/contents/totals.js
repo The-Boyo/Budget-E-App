@@ -44,17 +44,34 @@ export const capitalise = (des) => {
 
 export const addCommas = (val) => {
   const str = val.toString();
+  if (str[0] === '-') {
+    const newStr = str.slice(1);
+    return `-${workCommas(newStr)}`;
+  }
+
+  else {
+    return workCommas(str);
+  }
+}
+
+
+const workCommas = (str) => {
   if (str.length > 3 && str.length < 7) {
     return `${str.substring(0, str.length - 3)},${str.substring(str.length - 3, str.length)}`
   }
+
   else if (str.length >= 7 && str.length < 10) {
     return `${str.substring(0, str.length - 6)},${str.substring(str.length - 6, str.length - 3)},${str.substring(str.length - 3, str.length)}`
   }
+
+  else if (str.length >= 10 && str.length < 13) {
+    return `${str.substring(0, str.length - 9)},${str.substring(str.length - 9, str.length - 6)},${str.substring(str.length - 6, str.length - 3)},${str.substring(str.length - 3, str.length)}`
+  }
+
   else{
     return parseInt(str);
   }
 }
-
 
 
 
