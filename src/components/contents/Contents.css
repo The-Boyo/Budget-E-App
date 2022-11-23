@@ -64,6 +64,7 @@
   padding: .5em 0;
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
+  align-items: center;
 }
 
 .list-inc_cont > li, .list-exp_cont > li {
@@ -72,15 +73,19 @@
 
 .list-inc_cont > i, .list-exp_cont > i {
   margin: .5em;
-  align-self: center;
   justify-self: end;
 }
 
 .val {
-  align-self: center;
   justify-self: flex-end;
   position: relative;
   right: -2em;
+}
+
+@media screen and (max-width: 480px) {
+  .val {
+    right: -.5em;
+  }  
 }
 
 .fa-solid {
