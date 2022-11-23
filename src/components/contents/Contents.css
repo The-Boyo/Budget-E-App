@@ -1,0 +1,118 @@
+.stuff {
+  margin: 1em;
+  height: 90%;
+  background: rgba(235, 232, 232, 0.356);
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+}
+
+.income {
+  color: green;
+  animation: income 2.5s 1;
+}
+
+.expenses {
+  color: red;
+  animation: expenses 2.5s 1;
+}
+
+@keyframes income {
+  0% {
+    transform: translateX(-400px);
+  }
+  100% {
+    transform: translateX(0);
+  }  
+}
+
+@keyframes expenses {
+  0% {
+    transform: translateX(400px);
+  }
+  100% {
+    transform: translateX(0);
+  }  
+}
+
+.income, .expenses {
+  margin-right: .5em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -1.5px -1.5px 4px rgb(34, 27, 27);
+}
+
+
+.income:hover, .expenses:hover {
+  box-shadow: -2px -2px 4px;
+}
+
+.income > h3, .expenses > h3 {
+  align-self: center;
+  margin: 0.3em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.list-income, .list-expense {
+  list-style-type: none;
+  margin: .5em;
+  border-top: 1px dotted black;
+  position: relative;
+}
+
+.list-inc_cont, .list-exp_cont {
+  padding: .5em 0;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+
+.list-inc_cont > li, .list-exp_cont > li {
+  margin: .5em;
+}
+
+.list-inc_cont > i, .list-exp_cont > i {
+  margin: .5em;
+  align-self: center;
+  justify-self: end;
+}
+
+.val {
+  align-self: center;
+  justify-self: flex-end;
+  position: relative;
+  right: -2em;
+}
+
+.fa-solid {
+  font-size: 1.2em;
+  color: rgba(7, 7, 66, 0.486);
+}
+
+.total {
+  margin: .5em;
+  padding: .3em;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  width: 90%;
+  border-top: 3px double black;
+}
+
+.total-header {
+  align-self: start;
+}
+
+.total-value {
+  align-self: center;
+  justify-self: center;
+  position: relative;
+  right: .5em;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Times New Roman', Times, serif;
+  background: rgba(224, 224, 223, 0.541);
+}
+
+.container {
+  position: relative;
+  height: 100%;
+}
+
+.head {
+  background-color: rgb(92, 230, 138);
+  height: 35%;
+  box-shadow: 2px 2px 5px;
+  animation: head 2s 1;
+}
+
+@keyframes head {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.section {
+  height: 50%;
+  margin-top: 2em;
+}
+
+

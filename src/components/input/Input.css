@@ -1,0 +1,61 @@
+.input-cont {
+  margin: 1em;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: input 5s 1;
+}
+
+@keyframes input {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.input-cont * {
+  height: 38px;
+  margin: .3em;
+  border-radius: 0.3em;
+  border: 1px solid black;
+}
+
+.select, .button {
+  height: 30px;
+  position: relative;
+  bottom: -0.18em;
+}
+
+
+.description {
+  width: 50em;
+  padding-left: 0.8em;
+  text-transform: capitalize;
+}
+
+
+.value{
+  width: 10em;
+  padding-left: 0.6em;
+  text-transform: capitalize;
+}
+
+.button {
+  border: none;
+  margin-bottom: 1em;
+}
+
+.fa-circle-check {
+  font-size: 1.7em;
+  border: none;  
+}
+
+
+
+
+
+
+
