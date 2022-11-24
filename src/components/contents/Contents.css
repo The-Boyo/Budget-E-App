@@ -72,9 +72,10 @@
 }
 
 .list-inc_cont > i, .list-exp_cont > i {
-  margin-left: .5em;
+  margin-right: 1em;
   justify-self: end;
 }
+
 
 .val {
   justify-self: flex-end;
@@ -86,6 +87,10 @@
   .val {
     right: -1em;
   }  
+
+  .list-inc_cont > i, .list-exp_cont > i {
+    margin-right: .1em;
+  }
 }
 
 .fa-solid {
