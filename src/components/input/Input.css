@@ -31,14 +31,14 @@
 
 
 .description {
-  width: 50em;
+  width: 55%;
   padding-left: 0.8em;
   text-transform: capitalize;
 }
 
 
 .value{
-  width: 10em;
+  width: 25%;
   padding-left: 0.6em;
   text-transform: capitalize;
 }

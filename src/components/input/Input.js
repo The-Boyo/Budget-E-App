@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { connect } from 'react-redux';
 
 import { getInput } from "../../actions";
@@ -25,7 +25,7 @@ const Input = (props) => {
       setValue('');
       iconRef.current.style.color = 'rgb(92, 230, 138)';
 
-      setInterval(()=>{
+      setTimeout(()=>{
         iconRef.current.style.color = 'black'
       }, 1000)
     }

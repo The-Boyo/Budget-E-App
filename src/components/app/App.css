@@ -11,13 +11,12 @@ body{
 
 .container {
   position: relative;
-  height: 100%;
 }
 
 .head {
   background-color: rgb(233, 62, 77);
   height: 35%;
-  box-shadow: 2px 2px 5px;
+  box-shadow: 0 2px 5px;
   animation: head 2s 1;
 }
 
@@ -36,3 +35,4 @@ body{
 }
 
 
+ 
