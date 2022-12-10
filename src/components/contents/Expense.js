@@ -29,11 +29,6 @@ const Expense = (props) => {
         <h3 className="exp">Expenses</h3>
         <ul className="list-expense">
           {renderExp(props.expenses)}
-          {/* <div className="list-exp_cont">
-          <li>Bought Store</li>
-          <li className="val">700/=</li>
-          <button>X</button>
-          </div> */}
         </ul>
         <h4 className="total">
           <p className="total-header">Total</p>

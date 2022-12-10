@@ -17,14 +17,15 @@ const App = (props) => {
     
   const getColor = () => {
     if (totalBudget(props.income, props.expenses) < 0)
-      return  'rgb(233, 62, 77)'
+      return  'linear-gradient(to left, rgb(207, 27, 3), rgb(214, 104, 104))'
 
-      return 'rgb(92, 230, 138)'
+    else if(totalBudget(props.income, props.expenses) > 0)
+      return ' linear-gradient(to left, rgb(6, 114, 6), rgb(87, 241, 108))'
   }
 
   return (
     <div className='container'>
-        <header className='head' style={{backgroundColor: getColor()}}>
+        <header className='head' style={{background: getColor()}}>
           <Header />
         </header>
         <div className='input'>

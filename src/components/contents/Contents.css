@@ -39,8 +39,10 @@
   margin-right: .5em;
   display: flex;
   flex-direction: column;
+  border-radius: .2em;
   box-shadow: -1.5px -1.5px 4px rgb(34, 27, 27);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: .5em;
 }
 
 
@@ -92,6 +94,10 @@
 
   .income {
     margin-bottom: 1em;
+  }
+  
+  .des, .val, .list-exp_cont > i , .list-inc_cont > i {
+    font-size: 14.5px;
   }
 
   .val {

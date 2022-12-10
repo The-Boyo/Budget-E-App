@@ -9,7 +9,7 @@ const Header = (props) => {
   return (
     <div className='budget'>
       <div className='total-budget'>
-        <h1 className='budget-header'><i className="fa-regular fa-hand-point-down"></i> Your Budget <i className="fa-regular fa-hand-point-down"></i></h1>
+        <h1 className='budget-header'> <span>&#129518;</span> Your Budget <span>&#129518;</span></h1>
         <h2 className='budget-value' >{addCommas(totalBudget(props.income, props.expenses))}/=</h2>
       </div>
       <div className='budget-inc'>

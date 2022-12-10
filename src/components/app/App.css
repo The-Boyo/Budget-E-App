@@ -14,7 +14,7 @@ body{
 }
 
 .head {
-  background-color: rgb(233, 62, 77);
+  background: linear-gradient(to left, rgb(79, 54, 136), rgb(45, 206, 206));
   height: 35%;
   box-shadow: 0 2px 5px;
   animation: head 2s 1;

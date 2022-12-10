@@ -50,6 +50,13 @@
 .total-expenses {
   text-transform: capitalize;
 }
+/* Small Screens */
+
+@media screen and (max-width:600px) {
+  .budget-header > span {
+    font-size: .8em;
+  }
+}
 
 
 
