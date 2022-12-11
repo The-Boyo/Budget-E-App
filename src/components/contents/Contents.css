@@ -1,3 +1,8 @@
+:root {
+  --redy: rgb(243, 61, 76);
+  --greeny: rgb(16, 163, 65); 
+}
+
 .stuff {
   margin: 1em;
   height: 90%;
@@ -7,12 +12,12 @@
 }
 
 .income {
-  color: green;
+  color: var(--greeny);
   animation: income 2.5s 1;
 }
 
 .expenses {
-  color: red;
+  color: var(--redy);
   animation: expenses 2.5s 1;
 }
 

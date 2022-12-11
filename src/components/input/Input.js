@@ -6,11 +6,15 @@ import './Input.css'
 
 
 const Input = (props) => {
+
+  const theBlack = '1px solid black';
+
+
   const [description, setDescription] = useState('');
   const [value, setValue] = useState('');
   const [option, setOption] = useState('+');
-  const [borderDes, setBorderDes] = useState('1px solid black');
-  const [borderVal, setBorderVal] = useState('1px solid black');
+  const [borderDes, setBorderDes] = useState(theBlack);
+  const [borderVal, setBorderVal] = useState(theBlack);
 
   const iconRef = useRef();
 
@@ -44,16 +48,19 @@ const Input = (props) => {
   }  
 
   const borderChange = (e) => {
+    const redish = '2px solid rgb(233, 62, 77)';
+    const greenish = '2px solid rgb(92, 230, 138)';
+    
     if (e.target.className.includes('description')){
-      option === '+' ? setBorderDes('2px solid rgb(92, 230, 138)') : setBorderDes('2px solid rgb(233, 62, 77)')
+      option === '+' ? setBorderDes(greenish) : setBorderDes(redish)
     } else if (e.target.className.includes('value')) {
-      option === '+' ? setBorderVal('2px solid rgb(92, 230, 138)') : setBorderVal('2px solid rgb(233, 62, 77)')
+      option === '+' ? setBorderVal(greenish) : setBorderVal(redish)
     }
   }
-
-  const removeBorder = () => {
-    setBorderDes('1px solid black');
-    setBorderVal('1px solid black')
+  
+  const removeBorder = () => {    
+    setBorderDes(theBlack);
+    setBorderVal(theBlack)
   }
 
 
