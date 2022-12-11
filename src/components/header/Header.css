@@ -50,6 +50,21 @@
 .total-expenses {
   text-transform: capitalize;
 }
+
+
+.coins {
+  align-self: flex-start;
+  margin-top: 1em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.coins > a {
+  text-decoration: none;
+}
+
+
 /* Small Screens */
 
 @media screen and (max-width:600px) {

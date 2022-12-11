@@ -20,6 +20,9 @@ const Header = (props) => {
         <h4 className='total-expenses'>Expenses</h4>
         <h4 className='total-exp_value'>-{props.expenses.length > 0 ? addCommas(totals(props.expenses)) : ''}</h4>
       </div>
+      <div className='coins'>
+      <a target="_blank" href="https://icons8.com/icon/SQUhc67Yi70U/coins">Coins</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      </div>
     </div>
   )
 }

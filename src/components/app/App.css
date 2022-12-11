@@ -10,7 +10,7 @@ body{
 }
 
 .container {
-  position: relative;
+   position: relative;
 }
 
 .head {
@@ -33,6 +33,3 @@ body{
   height: 50%;
   margin-top: 2em;
 }
-
-
- 
